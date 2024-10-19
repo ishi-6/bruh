@@ -1,0 +1,24 @@
+{
+    "section1": {
+        "files": [
+            {
+                "type": "multiatlas",
+                "url": "assets/media/rooms/mansionAttic/mansionAttic.json",
+                "path": "assets/media/rooms/mansionAttic",
+                "key": "mansionAttic"
+            },
+            {
+                "url": "assets/media/rooms/mansionAttic/mansionAttic-physics.json",
+                "type": "json",
+                "key": "mansionAttic-physics"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

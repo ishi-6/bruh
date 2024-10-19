@@ -1,0 +1,445 @@
+{
+    "id": "dfe97908-bb62-426a-8c44-2e59146bdbe9",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "yukon/assets/media/rooms/mansionAttic/mansionAttic-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "mansionAttic",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f318964b-7b24-4aaa-803c-6e877358e5a4",
+            "label": "clouds",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "clouds"
+            },
+            "x": 805,
+            "y": 40
+        },
+        {
+            "type": "Sprite",
+            "id": "8b34f6c7-d7c7-4ff9-8835-5e0fde38bceb",
+            "label": "lightning",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "lightning",
+            "Animation.end": 15,
+            "Animation.repeatDelay": 2400,
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "lightning0002"
+            },
+            "x": 311,
+            "y": 104
+        },
+        {
+            "type": "Image",
+            "id": "b040796d-0bb4-4b28-9d67-1380f1317623",
+            "label": "background",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "background"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "5342afff-0360-40f7-8d7a-c8e557b17a9d",
+            "label": "armchair",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "armchair"
+            },
+            "x": 1110,
+            "y": 668
+        },
+        {
+            "type": "Image",
+            "id": "b1da895c-bb91-4087-ba4a-3a70ad2ae6da",
+            "label": "armchair2",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "armchair2"
+            },
+            "x": 734,
+            "y": 700
+        },
+        {
+            "type": "Image",
+            "id": "bfbaf6f8-50f7-463f-9ca0-2dc4b57d1470",
+            "label": "armchairArm",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "armchairArm"
+            },
+            "x": 1115,
+            "y": 700
+        },
+        {
+            "type": "Image",
+            "id": "bbb34649-57c1-4c29-8b0f-73c75b1c4608",
+            "label": "armchairArm2",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "armchairArm2"
+            },
+            "x": 731,
+            "y": 726
+        },
+        {
+            "type": "Image",
+            "id": "85d5d55d-14da-46ae-8d37-1a99194bf738",
+            "label": "bottles",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "bottles"
+            },
+            "x": 1082,
+            "y": 390
+        },
+        {
+            "type": "Image",
+            "id": "1c6df38b-91e5-4f6b-868b-16ff074b4d34",
+            "label": "keypad",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "keypad"
+            },
+            "x": 838,
+            "y": 457
+        },
+        {
+            "type": "Image",
+            "id": "5647a43c-e5f8-475a-818e-1a293a737aae",
+            "label": "cageFront",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "cageFront"
+            },
+            "x": 927,
+            "y": 189
+        },
+        {
+            "type": "Image",
+            "id": "46b3f56c-e6b7-4f6f-83ab-dc6d80df4078",
+            "label": "chair",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "chair"
+            },
+            "x": 1003,
+            "y": 604
+        },
+        {
+            "type": "Image",
+            "id": "fdc754d9-6717-4b3f-b7f6-3e414b2abe2d",
+            "label": "chairOneLeg",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "chairOneLeg"
+            },
+            "x": 843,
+            "y": 629
+        },
+        {
+            "type": "Image",
+            "id": "847f3cc9-ca36-4136-858e-f1fa2f9394da",
+            "label": "hallway",
+            "components": [
+                "MoveTo"
+            ],
+            "MoveTo.x": "388",
+            "MoveTo.y": "700",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "hallway"
+            },
+            "x": 388,
+            "y": 657
+        },
+        {
+            "type": "Image",
+            "id": "309b06a1-4dc4-4f89-a5e0-40d1042d1176",
+            "label": "briefcase",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "briefcase"
+            },
+            "x": 960,
+            "y": 448
+        },
+        {
+            "type": "Image",
+            "id": "84c209d7-4392-4873-8f19-bddf03a56387",
+            "label": "railingHorizontal",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "railingHorizontal"
+            },
+            "x": 1412,
+            "y": 474
+        },
+        {
+            "type": "Image",
+            "id": "6c9439ec-5539-4469-83da-4943c4cfb9b4",
+            "label": "organ",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "organ"
+            },
+            "x": 1430,
+            "y": 450
+        },
+        {
+            "type": "Image",
+            "id": "0160f065-8c46-4a2a-9d75-65eb3d5af7ab",
+            "label": "vanity",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "vanity"
+            },
+            "x": 247,
+            "y": 540
+        },
+        {
+            "type": "Image",
+            "id": "45600211-4c57-48be-b03c-159e593a2ec4",
+            "label": "railingVertical",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "railingVertical"
+            },
+            "x": 1278,
+            "y": 536
+        },
+        {
+            "type": "Image",
+            "id": "88a76f9f-f682-44a4-8229-a633cd6ff50a",
+            "label": "books",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "books"
+            },
+            "x": 1368,
+            "y": 642
+        },
+        {
+            "type": "Image",
+            "id": "a1b8ed98-1258-4a3a-bbc1-f5a80567070a",
+            "label": "wheeledStool",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "wheeledStool"
+            },
+            "x": 516,
+            "y": 424
+        },
+        {
+            "type": "Image",
+            "id": "18bad035-fe9a-4161-b415-356e61289d01",
+            "label": "telescope",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "telescope"
+            },
+            "x": 662,
+            "y": 177
+        },
+        {
+            "type": "Image",
+            "id": "b2694849-3708-4d9a-9b6f-b21a6cb1fe43",
+            "label": "railingHorizontal1",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "railingHorizontal1"
+            },
+            "x": 408,
+            "y": 475
+        },
+        {
+            "type": "Image",
+            "id": "6197963d-0233-491b-a44a-8958ae87fbc9",
+            "label": "radio",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "radio"
+            },
+            "x": 282,
+            "y": 491
+        },
+        {
+            "type": "Image",
+            "id": "65d9d5d2-b631-493f-8b3f-159bd29cbec9",
+            "label": "railingVertical1",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "railingVertical1"
+            },
+            "x": 549,
+            "y": 538
+        },
+        {
+            "type": "Image",
+            "id": "f4839e87-839d-4404-ae1b-579696615fb8",
+            "label": "painting0001",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "painting0001"
+            },
+            "x": 393,
+            "y": 18
+        },
+        {
+            "type": "Image",
+            "id": "e59a3a97-4d21-4aac-84cd-46b9d08ed12d",
+            "label": "table",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "table"
+            },
+            "x": 919,
+            "y": 704
+        },
+        {
+            "type": "Image",
+            "id": "7118d660-b157-47e5-9596-301b6d1103cd",
+            "label": "cushion",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "cushion"
+            },
+            "x": 1035,
+            "y": 820
+        },
+        {
+            "type": "Image",
+            "id": "d8c5c1b2-eb4d-4d61-8492-2e32567c0550",
+            "label": "stool",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "stool"
+            },
+            "x": 838,
+            "y": 829
+        },
+        {
+            "type": "Image",
+            "id": "595fe8e2-3f8b-404e-a058-3ebb8a60447e",
+            "label": "ladder",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "ladder"
+            },
+            "x": 163,
+            "y": 563
+        },
+        {
+            "type": "Image",
+            "id": "5c475939-0d9a-41b7-be9d-1cf2497e04cf",
+            "label": "rockingChair",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "rockingChair"
+            },
+            "x": 130,
+            "y": 647
+        },
+        {
+            "type": "Image",
+            "id": "0e35b525-5f90-4d1e-8ac8-8c6a6863d4e1",
+            "label": "rockingChairArm",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "rockingChairArm"
+            },
+            "x": 130,
+            "y": 663
+        },
+        {
+            "type": "Image",
+            "id": "c69f4ab5-54a7-41cf-96b4-961059b8ce2d",
+            "label": "railingPillar1",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "railingPillar1"
+            },
+            "x": 237,
+            "y": 672
+        },
+        {
+            "type": "Image",
+            "id": "7aa236af-865f-48d0-9658-611fb4e295b1",
+            "label": "ballroom",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "ballroom"
+            },
+            "x": 1423,
+            "y": 851
+        },
+        {
+            "type": "Image",
+            "id": "49c9aa04-60ae-4304-b803-c21cbddc19f5",
+            "label": "foreground",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "foreground"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "18934e5a-8c81-48c3-b1aa-a43d790be74b",
+            "label": "wardrobe0001",
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "wardrobe0001"
+            },
+            "x": 1203,
+            "y": 17
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "lists": [
+        {
+            "id": "8a00c9fe-817f-43d4-a2da-ee79ee8a1041",
+            "label": "sort",
+            "objectIds": [
+                "7118d660-b157-47e5-9596-301b6d1103cd",
+                "a1b8ed98-1258-4a3a-bbc1-f5a80567070a",
+                "d8c5c1b2-eb4d-4d61-8492-2e32567c0550",
+                "fdc754d9-6717-4b3f-b7f6-3e414b2abe2d",
+                "46b3f56c-e6b7-4f6f-83ab-dc6d80df4078",
+                "bbb34649-57c1-4c29-8b0f-73c75b1c4608",
+                "bfbaf6f8-50f7-463f-9ca0-2dc4b57d1470",
+                "b1da895c-bb91-4087-ba4a-3a70ad2ae6da",
+                "5342afff-0360-40f7-8d7a-c8e557b17a9d",
+                "e59a3a97-4d21-4aac-84cd-46b9d08ed12d",
+                "49c9aa04-60ae-4304-b803-c21cbddc19f5",
+                "5c475939-0d9a-41b7-be9d-1cf2497e04cf",
+                "309b06a1-4dc4-4f89-a5e0-40d1042d1176",
+                "18bad035-fe9a-4161-b415-356e61289d01"
+            ]
+        }
+    ]
+}
