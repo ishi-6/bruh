@@ -8,9 +8,9 @@
                 "key": "mansionAttic"
             },
             {
-                "url": "assets/media/rooms/mansionAttic/mansionAttic-physics.json",
+                "url": "assets/media/rooms/mansionAttic/mansionattic-physics.json",
                 "type": "json",
-                "key": "mansionAttic-physics"
+                "key": "mansionattic-physics"
             }
         ]
     },
