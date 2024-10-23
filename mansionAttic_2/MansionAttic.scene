@@ -17,6 +17,22 @@
     },
     "displayList": [
         {
+            "type": "Rectangle",
+            "id": "f5b34b87-5618-4f67-97ed-a6cb47812dda",
+            "label": "crystalButton",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "MoveTo.x": "930",
+            "MoveTo.y": "694",
+            "x": 919,
+            "y": 649,
+            "isFilled": true,
+            "width": 80,
+            "height": 80
+        },
+        {
             "type": "Image",
             "id": "f318964b-7b24-4aaa-803c-6e877358e5a4",
             "label": "clouds",
@@ -125,6 +141,12 @@
             "type": "Image",
             "id": "5647a43c-e5f8-475a-818e-1a293a737aae",
             "label": "cageFront",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": "930",
+            "MoveTo.y": "226",
             "texture": {
                 "key": "mansionAttic",
                 "frame": "cageFront"
@@ -159,10 +181,13 @@
             "id": "847f3cc9-ca36-4136-858e-f1fa2f9394da",
             "label": "hallway",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "Button"
             ],
-            "MoveTo.x": "388",
-            "MoveTo.y": "700",
+            "MoveTo.x": "426",
+            "MoveTo.y": "680",
+            "Button.spriteName": "hallway",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "mansionAttic",
                 "frame": "hallway"
@@ -233,8 +258,8 @@
                 "key": "mansionAttic",
                 "frame": "books"
             },
-            "x": 1368,
-            "y": 642
+            "x": 1349,
+            "y": 646
         },
         {
             "type": "Image",
@@ -251,6 +276,11 @@
             "type": "Image",
             "id": "18bad035-fe9a-4161-b415-356e61289d01",
             "label": "telescope",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "telescope",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "mansionAttic",
                 "frame": "telescope"
@@ -293,19 +323,13 @@
         },
         {
             "type": "Image",
-            "id": "f4839e87-839d-4404-ae1b-579696615fb8",
-            "label": "painting0001",
-            "texture": {
-                "key": "mansionAttic",
-                "frame": "painting0001"
-            },
-            "x": 393,
-            "y": 18
-        },
-        {
-            "type": "Image",
             "id": "e59a3a97-4d21-4aac-84cd-46b9d08ed12d",
             "label": "table",
+            "components": [
+                "MoveTo"
+            ],
+            "MoveTo.x": "930",
+            "MoveTo.y": "694",
             "texture": {
                 "key": "mansionAttic",
                 "frame": "table"
@@ -332,8 +356,8 @@
                 "key": "mansionAttic",
                 "frame": "stool"
             },
-            "x": 838,
-            "y": 829
+            "x": 848,
+            "y": 808
         },
         {
             "type": "Image",
@@ -383,6 +407,14 @@
             "type": "Image",
             "id": "7aa236af-865f-48d0-9658-611fb4e295b1",
             "label": "ballroom",
+            "components": [
+                "MoveTo",
+                "Button"
+            ],
+            "MoveTo.x": "1296",
+            "MoveTo.y": "800",
+            "Button.spriteName": "ballroom",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "mansionAttic",
                 "frame": "ballroom"
@@ -403,14 +435,72 @@
         },
         {
             "type": "Image",
-            "id": "18934e5a-8c81-48c3-b1aa-a43d790be74b",
-            "label": "wardrobe0001",
+            "id": "4e77470f-bf46-4070-bf7c-9a0de1bb34c1",
+            "label": "wardrobeClosed",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "wardrobeClosed",
+            "Button.activeFrame": false,
+            "MoveTo.x": "1200",
+            "MoveTo.y": "390",
             "texture": {
                 "key": "mansionAttic",
-                "frame": "wardrobe0001"
+                "frame": "wardrobeClosed"
             },
-            "x": 1203,
-            "y": 17
+            "x": 1207,
+            "y": 319
+        },
+        {
+            "type": "Image",
+            "id": "25cd4d2b-08ef-4c26-8d73-0369fad3ba8f",
+            "label": "paintingClosed",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "paintingClosed",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "paintingClosed"
+            },
+            "x": 303,
+            "y": 269
+        },
+        {
+            "type": "Sprite",
+            "id": "a315d535-6e07-4661-9075-ce26494df76b",
+            "label": "eyes0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "eyes",
+            "Animation.end": 398,
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "eyes0001"
+            },
+            "x": 1595,
+            "y": 837
+        },
+        {
+            "type": "Sprite",
+            "id": "5f8b4279-4c77-4c88-a0aa-b8e550b0c97e",
+            "label": "eyes",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "eyes",
+            "Animation.start": 100,
+            "Animation.end": 398,
+            "texture": {
+                "key": "mansionAttic",
+                "frame": "eyes0001"
+            },
+            "x": 1645,
+            "y": 926,
+            "flipX": true
         }
     ],
     "plainObjects": [],
@@ -436,9 +526,13 @@
                 "5342afff-0360-40f7-8d7a-c8e557b17a9d",
                 "e59a3a97-4d21-4aac-84cd-46b9d08ed12d",
                 "49c9aa04-60ae-4304-b803-c21cbddc19f5",
-                "5c475939-0d9a-41b7-be9d-1cf2497e04cf",
                 "309b06a1-4dc4-4f89-a5e0-40d1042d1176",
-                "18bad035-fe9a-4161-b415-356e61289d01"
+                "18bad035-fe9a-4161-b415-356e61289d01",
+                "6197963d-0233-491b-a44a-8958ae87fbc9",
+                "0e35b525-5f90-4d1e-8ac8-8c6a6863d4e1",
+                "65d9d5d2-b631-493f-8b3f-159bd29cbec9",
+                "5647a43c-e5f8-475a-818e-1a293a737aae",
+                "88a76f9f-f682-44a4-8229-a633cd6ff50a"
             ]
         }
     ]

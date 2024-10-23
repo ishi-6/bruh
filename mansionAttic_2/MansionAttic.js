@@ -33,6 +33,10 @@ export default class MansionAttic extends RoomScene {
     /** @returns {void} */
     _create() {
 
+        // crystalButton
+        const crystalButton = this.add.rectangle(919, 649, 80, 80);
+        crystalButton.isFilled = true;
+
         // clouds
         this.add.image(805, 40, "mansionAttic", "clouds");
 
@@ -62,7 +66,7 @@ export default class MansionAttic extends RoomScene {
         this.add.image(838, 457, "mansionAttic", "keypad");
 
         // cageFront
-        this.add.image(927, 189, "mansionAttic", "cageFront");
+        const cageFront = this.add.image(927, 189, "mansionAttic", "cageFront");
 
         // chair
         const chair = this.add.image(1003, 604, "mansionAttic", "chair");
@@ -89,7 +93,7 @@ export default class MansionAttic extends RoomScene {
         this.add.image(1278, 536, "mansionAttic", "railingVertical");
 
         // books
-        this.add.image(1368, 642, "mansionAttic", "books");
+        const books = this.add.image(1349, 646, "mansionAttic", "books");
 
         // wheeledStool
         const wheeledStool = this.add.image(516, 424, "mansionAttic", "wheeledStool");
@@ -101,13 +105,10 @@ export default class MansionAttic extends RoomScene {
         this.add.image(408, 475, "mansionAttic", "railingHorizontal1");
 
         // radio
-        this.add.image(282, 491, "mansionAttic", "radio");
+        const radio = this.add.image(282, 491, "mansionAttic", "radio");
 
         // railingVertical1
-        this.add.image(549, 538, "mansionAttic", "railingVertical1");
-
-        // painting0001
-        this.add.image(393, 18, "mansionAttic", "painting0001");
+        const railingVertical1 = this.add.image(549, 538, "mansionAttic", "railingVertical1");
 
         // table
         const table = this.add.image(919, 704, "mansionAttic", "table");
@@ -116,32 +117,48 @@ export default class MansionAttic extends RoomScene {
         const cushion = this.add.image(1035, 820, "mansionAttic", "cushion");
 
         // stool
-        const stool = this.add.image(838, 829, "mansionAttic", "stool");
+        const stool = this.add.image(848, 808, "mansionAttic", "stool");
 
         // ladder
         this.add.image(163, 563, "mansionAttic", "ladder");
 
         // rockingChair
-        const rockingChair = this.add.image(130, 647, "mansionAttic", "rockingChair");
+        this.add.image(130, 647, "mansionAttic", "rockingChair");
 
         // rockingChairArm
-        this.add.image(130, 663, "mansionAttic", "rockingChairArm");
+        const rockingChairArm = this.add.image(130, 663, "mansionAttic", "rockingChairArm");
 
         // railingPillar1
         this.add.image(237, 672, "mansionAttic", "railingPillar1");
 
         // ballroom
-        this.add.image(1423, 851, "mansionAttic", "ballroom");
+        const ballroom = this.add.image(1423, 851, "mansionAttic", "ballroom");
 
         // foreground
         const foreground = this.add.image(0, 0, "mansionAttic", "foreground");
         foreground.setOrigin(0, 0);
 
-        // wardrobe0001
-        this.add.image(1203, 17, "mansionAttic", "wardrobe0001");
+        // wardrobeClosed
+        const wardrobeClosed = this.add.image(1207, 319, "mansionAttic", "wardrobeClosed");
+
+        // paintingClosed
+        const paintingClosed = this.add.image(303, 269, "mansionAttic", "paintingClosed");
+
+        // eyes0001
+        const eyes0001 = this.add.sprite(1595, 837, "mansionAttic", "eyes0001");
+
+        // eyes
+        const eyes = this.add.sprite(1645, 926, "mansionAttic", "eyes0001");
+        eyes.flipX = true;
 
         // lists
-        const sort = [cushion, wheeledStool, stool, chairOneLeg, chair, armchairArm2, armchairArm, armchair2, armchair, table, foreground, rockingChair, briefcase, telescope];
+        const sort = [cushion, wheeledStool, stool, chairOneLeg, chair, armchairArm2, armchairArm, armchair2, armchair, table, foreground, briefcase, telescope, radio, rockingChairArm, railingVertical1, cageFront, books];
+
+        // crystalButton (components)
+        new SimpleButton(crystalButton);
+        const crystalButtonMoveTo = new MoveTo(crystalButton);
+        crystalButtonMoveTo.x = 930;
+        crystalButtonMoveTo.y = 694;
 
         // lightning (components)
         const lightningAnimation = new Animation(lightning);
@@ -149,10 +166,61 @@ export default class MansionAttic extends RoomScene {
         lightningAnimation.end = 15;
         lightningAnimation.repeatDelay = 2400;
 
+        // cageFront (components)
+        const cageFrontMoveTo = new MoveTo(cageFront);
+        cageFrontMoveTo.x = 930;
+        cageFrontMoveTo.y = 226;
+        new SimpleButton(cageFront);
+
         // hallway (components)
         const hallwayMoveTo = new MoveTo(hallway);
-        hallwayMoveTo.x = 388;
-        hallwayMoveTo.y = 700;
+        hallwayMoveTo.x = 426;
+        hallwayMoveTo.y = 680;
+        const hallwayButton = new Button(hallway);
+        hallwayButton.spriteName = "hallway";
+        hallwayButton.activeFrame = false;
+
+        // telescope (components)
+        const telescopeButton = new Button(telescope);
+        telescopeButton.spriteName = "telescope";
+        telescopeButton.activeFrame = false;
+
+        // table (components)
+        const tableMoveTo = new MoveTo(table);
+        tableMoveTo.x = 930;
+        tableMoveTo.y = 694;
+
+        // ballroom (components)
+        const ballroomMoveTo = new MoveTo(ballroom);
+        ballroomMoveTo.x = 1296;
+        ballroomMoveTo.y = 800;
+        const ballroomButton = new Button(ballroom);
+        ballroomButton.spriteName = "ballroom";
+        ballroomButton.activeFrame = false;
+
+        // wardrobeClosed (components)
+        const wardrobeClosedButton = new Button(wardrobeClosed);
+        wardrobeClosedButton.spriteName = "wardrobeClosed";
+        wardrobeClosedButton.activeFrame = false;
+        const wardrobeClosedMoveTo = new MoveTo(wardrobeClosed);
+        wardrobeClosedMoveTo.x = 1200;
+        wardrobeClosedMoveTo.y = 390;
+
+        // paintingClosed (components)
+        const paintingClosedButton = new Button(paintingClosed);
+        paintingClosedButton.spriteName = "paintingClosed";
+        paintingClosedButton.activeFrame = false;
+
+        // eyes0001 (components)
+        const eyes0001Animation = new Animation(eyes0001);
+        eyes0001Animation.key = "eyes";
+        eyes0001Animation.end = 398;
+
+        // eyes (components)
+        const eyesAnimation = new Animation(eyes);
+        eyesAnimation.key = "eyes";
+        eyesAnimation.start = 100;
+        eyesAnimation.end = 398;
 
         this.sort = sort;
 
