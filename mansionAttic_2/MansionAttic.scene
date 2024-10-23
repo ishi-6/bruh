@@ -163,8 +163,8 @@
                 "key": "mansionAttic",
                 "frame": "chair"
             },
-            "x": 1003,
-            "y": 604
+            "x": 1005,
+            "y": 618
         },
         {
             "type": "Image",
@@ -350,7 +350,7 @@
                 "frame": "cushion"
             },
             "x": 1035,
-            "y": 820
+            "y": 823
         },
         {
             "type": "Image",
@@ -361,7 +361,8 @@
                 "frame": "stool"
             },
             "x": 848,
-            "y": 808
+            "y": 785,
+            "originY": 0.3
         },
         {
             "type": "Image",
@@ -522,9 +523,7 @@
             "id": "8a00c9fe-817f-43d4-a2da-ee79ee8a1041",
             "label": "sort",
             "objectIds": [
-                "7118d660-b157-47e5-9596-301b6d1103cd",
                 "a1b8ed98-1258-4a3a-bbc1-f5a80567070a",
-                "d8c5c1b2-eb4d-4d61-8492-2e32567c0550",
                 "fdc754d9-6717-4b3f-b7f6-3e414b2abe2d",
                 "46b3f56c-e6b7-4f6f-83ab-dc6d80df4078",
                 "bbb34649-57c1-4c29-8b0f-73c75b1c4608",
@@ -541,7 +540,8 @@
                 "5647a43c-e5f8-475a-818e-1a293a737aae",
                 "88a76f9f-f682-44a4-8229-a633cd6ff50a",
                 "1c6df38b-91e5-4f6b-868b-16ff074b4d34",
-                "b2694849-3708-4d9a-9b6f-b21a6cb1fe43"
+                "b2694849-3708-4d9a-9b6f-b21a6cb1fe43",
+                "d8c5c1b2-eb4d-4d61-8492-2e32567c0550"
             ]
         }
     ]
