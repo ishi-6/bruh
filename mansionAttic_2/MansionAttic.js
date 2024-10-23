@@ -63,7 +63,8 @@ export default class MansionAttic extends RoomScene {
         this.add.image(1082, 390, "mansionAttic", "bottles");
 
         // keypad
-        this.add.image(838, 457, "mansionAttic", "keypad");
+        const keypad = this.add.image(838, 443, "mansionAttic", "keypad");
+        keypad.setOrigin(0.5, 0.4);
 
         // cageFront
         const cageFront = this.add.image(927, 189, "mansionAttic", "cageFront");
@@ -78,7 +79,7 @@ export default class MansionAttic extends RoomScene {
         const hallway = this.add.image(388, 657, "mansionAttic", "hallway");
 
         // briefcase
-        const briefcase = this.add.image(960, 448, "mansionAttic", "briefcase");
+        const briefcase = this.add.image(958, 455, "mansionAttic", "briefcase");
 
         // railingHorizontal
         this.add.image(1412, 474, "mansionAttic", "railingHorizontal");
@@ -96,13 +97,13 @@ export default class MansionAttic extends RoomScene {
         const books = this.add.image(1349, 646, "mansionAttic", "books");
 
         // wheeledStool
-        const wheeledStool = this.add.image(516, 424, "mansionAttic", "wheeledStool");
+        const wheeledStool = this.add.image(509, 431, "mansionAttic", "wheeledStool");
 
         // telescope
         const telescope = this.add.image(662, 177, "mansionAttic", "telescope");
 
         // railingHorizontal1
-        this.add.image(408, 475, "mansionAttic", "railingHorizontal1");
+        const railingHorizontal1 = this.add.image(408, 475, "mansionAttic", "railingHorizontal1");
 
         // radio
         const radio = this.add.image(282, 491, "mansionAttic", "radio");
@@ -152,7 +153,7 @@ export default class MansionAttic extends RoomScene {
         eyes.flipX = true;
 
         // lists
-        const sort = [cushion, wheeledStool, stool, chairOneLeg, chair, armchairArm2, armchairArm, armchair2, armchair, table, foreground, briefcase, telescope, radio, rockingChairArm, railingVertical1, cageFront, books];
+        const sort = [cushion, wheeledStool, stool, chairOneLeg, chair, armchairArm2, armchairArm, armchair2, armchair, table, foreground, briefcase, telescope, radio, rockingChairArm, railingVertical1, cageFront, books, keypad, railingHorizontal1];
 
         // crystalButton (components)
         new SimpleButton(crystalButton);
@@ -184,6 +185,9 @@ export default class MansionAttic extends RoomScene {
         const telescopeButton = new Button(telescope);
         telescopeButton.spriteName = "telescope";
         telescopeButton.activeFrame = false;
+        const telescopeMoveTo = new MoveTo(telescope);
+        telescopeMoveTo.x = 509;
+        telescopeMoveTo.y = 435;
 
         // table (components)
         const tableMoveTo = new MoveTo(table);
@@ -210,6 +214,9 @@ export default class MansionAttic extends RoomScene {
         const paintingClosedButton = new Button(paintingClosed);
         paintingClosedButton.spriteName = "paintingClosed";
         paintingClosedButton.activeFrame = false;
+        const paintingClosedMoveTo = new MoveTo(paintingClosed);
+        paintingClosedMoveTo.x = 433;
+        paintingClosedMoveTo.y = 460;
 
         // eyes0001 (components)
         const eyes0001Animation = new Animation(eyes0001);

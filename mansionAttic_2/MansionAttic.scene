@@ -135,7 +135,8 @@
                 "frame": "keypad"
             },
             "x": 838,
-            "y": 457
+            "y": 443,
+            "originY": 0.4
         },
         {
             "type": "Image",
@@ -203,8 +204,8 @@
                 "key": "mansionAttic",
                 "frame": "briefcase"
             },
-            "x": 960,
-            "y": 448
+            "x": 958,
+            "y": 455
         },
         {
             "type": "Image",
@@ -269,18 +270,21 @@
                 "key": "mansionAttic",
                 "frame": "wheeledStool"
             },
-            "x": 516,
-            "y": 424
+            "x": 509,
+            "y": 431
         },
         {
             "type": "Image",
             "id": "18bad035-fe9a-4161-b415-356e61289d01",
             "label": "telescope",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "telescope",
             "Button.activeFrame": false,
+            "MoveTo.x": "509",
+            "MoveTo.y": "435",
             "texture": {
                 "key": "mansionAttic",
                 "frame": "telescope"
@@ -457,10 +461,13 @@
             "id": "25cd4d2b-08ef-4c26-8d73-0369fad3ba8f",
             "label": "paintingClosed",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "paintingClosed",
             "Button.activeFrame": false,
+            "MoveTo.x": "433",
+            "MoveTo.y": "460",
             "texture": {
                 "key": "mansionAttic",
                 "frame": "paintingClosed"
@@ -532,7 +539,9 @@
                 "0e35b525-5f90-4d1e-8ac8-8c6a6863d4e1",
                 "65d9d5d2-b631-493f-8b3f-159bd29cbec9",
                 "5647a43c-e5f8-475a-818e-1a293a737aae",
-                "88a76f9f-f682-44a4-8229-a633cd6ff50a"
+                "88a76f9f-f682-44a4-8229-a633cd6ff50a",
+                "1c6df38b-91e5-4f6b-868b-16ff074b4d34",
+                "b2694849-3708-4d9a-9b6f-b21a6cb1fe43"
             ]
         }
     ]
