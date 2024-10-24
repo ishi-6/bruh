@@ -215,8 +215,9 @@
                 "key": "mansionAttic",
                 "frame": "railingHorizontal"
             },
-            "x": 1412,
-            "y": 474
+            "x": 1409,
+            "y": 441,
+            "originY": 0.2
         },
         {
             "type": "Image",
@@ -361,8 +362,8 @@
                 "frame": "stool"
             },
             "x": 848,
-            "y": 785,
-            "originY": 0.3
+            "y": 770,
+            "originY": 0.2
         },
         {
             "type": "Image",
@@ -435,8 +436,9 @@
                 "key": "mansionAttic",
                 "frame": "foreground"
             },
+            "y": 960,
             "originX": 0,
-            "originY": 0
+            "originY": 1
         },
         {
             "type": "Image",
@@ -541,7 +543,9 @@
                 "88a76f9f-f682-44a4-8229-a633cd6ff50a",
                 "1c6df38b-91e5-4f6b-868b-16ff074b4d34",
                 "b2694849-3708-4d9a-9b6f-b21a6cb1fe43",
-                "d8c5c1b2-eb4d-4d61-8492-2e32567c0550"
+                "d8c5c1b2-eb4d-4d61-8492-2e32567c0550",
+                "84c209d7-4392-4873-8f19-bddf03a56387",
+                "6c9439ec-5539-4469-83da-4943c4cfb9b4"
             ]
         }
     ]

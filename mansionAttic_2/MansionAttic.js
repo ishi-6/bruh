@@ -82,10 +82,11 @@ export default class MansionAttic extends RoomScene {
         const briefcase = this.add.image(958, 455, "mansionAttic", "briefcase");
 
         // railingHorizontal
-        this.add.image(1412, 474, "mansionAttic", "railingHorizontal");
+        const railingHorizontal = this.add.image(1409, 441, "mansionAttic", "railingHorizontal");
+        railingHorizontal.setOrigin(0.5, 0.2);
 
         // organ
-        this.add.image(1430, 450, "mansionAttic", "organ");
+        const organ = this.add.image(1430, 450, "mansionAttic", "organ");
 
         // vanity
         this.add.image(247, 540, "mansionAttic", "vanity");
@@ -118,8 +119,8 @@ export default class MansionAttic extends RoomScene {
         this.add.image(1035, 823, "mansionAttic", "cushion");
 
         // stool
-        const stool = this.add.image(848, 785, "mansionAttic", "stool");
-        stool.setOrigin(0.5, 0.3);
+        const stool = this.add.image(848, 770, "mansionAttic", "stool");
+        stool.setOrigin(0.5, 0.2);
 
         // ladder
         this.add.image(163, 563, "mansionAttic", "ladder");
@@ -137,8 +138,8 @@ export default class MansionAttic extends RoomScene {
         const ballroom = this.add.image(1423, 851, "mansionAttic", "ballroom");
 
         // foreground
-        const foreground = this.add.image(0, 0, "mansionAttic", "foreground");
-        foreground.setOrigin(0, 0);
+        const foreground = this.add.image(0, 960, "mansionAttic", "foreground");
+        foreground.setOrigin(0, 1);
 
         // wardrobeClosed
         const wardrobeClosed = this.add.image(1207, 319, "mansionAttic", "wardrobeClosed");
@@ -154,7 +155,7 @@ export default class MansionAttic extends RoomScene {
         eyes.flipX = true;
 
         // lists
-        const sort = [wheeledStool, chairOneLeg, chair, armchairArm2, armchairArm, armchair2, armchair, table, foreground, briefcase, telescope, radio, rockingChairArm, railingVertical1, cageFront, books, keypad, railingHorizontal1, stool];
+        const sort = [wheeledStool, chairOneLeg, chair, armchairArm2, armchairArm, armchair2, armchair, table, foreground, briefcase, telescope, radio, rockingChairArm, railingVertical1, cageFront, books, keypad, railingHorizontal1, stool, railingHorizontal, organ];
 
         // crystalButton (components)
         new SimpleButton(crystalButton);
